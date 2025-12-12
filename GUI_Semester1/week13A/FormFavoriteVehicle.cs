@@ -13,6 +13,8 @@ namespace GUI_Semester1.week13
         public FormFavoriteVehicle()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void buttonOK_Click(object sender, EventArgs e)

@@ -14,6 +14,8 @@ namespace GUI_Semester1.week13
         {
             InitializeComponent();
             textBoxInputNama.Select();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void buttonProses_Click(object sender, EventArgs e)

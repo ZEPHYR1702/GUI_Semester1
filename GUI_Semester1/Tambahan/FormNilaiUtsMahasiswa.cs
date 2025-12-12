@@ -15,6 +15,9 @@ namespace GUI_Semester1.Tambahan
         public FormNilaiUtsMahasiswa()
         {
             InitializeComponent();
+            textBoxNamaMahasiswa.Select();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void SimpanData()

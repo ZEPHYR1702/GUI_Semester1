@@ -1,5 +1,6 @@
 ﻿using GUI_Semester1.Tambahan;
 using GUI_Semester1.week13;
+using GUI_Semester1.week13B;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace GUI_Semester1
         public FormMaster()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         private void comboBoxGroup_SelectedIndexChanged(object sender, EventArgs e)
@@ -32,6 +35,11 @@ namespace GUI_Semester1
                 comboBoxLatihan.Items.Add("BMI Calculator");
                 comboBoxLatihan.Items.Add("Favorite Vehicle");
                 comboBoxLatihan.Items.Add("Test");
+            }
+            else if (comboBoxGroup.SelectedItem.ToString() == "Week 13B")
+            {
+                comboBoxLatihan.Items.Add("Data Responden");
+                comboBoxLatihan.Items.Add("Sistem Administrasi HRD");
             }
 
             ValidateSelection();
@@ -66,6 +74,16 @@ namespace GUI_Semester1
                 case "Test":
                     {
                         new FormTest().ShowDialog();
+                        break;
+                    }
+                case "Data Responden":
+                    {
+                        new FormDataResponden().ShowDialog();
+                        break;
+                    }
+                case "Sistem Administrasi HRD":
+                    {
+                        new FormSistemAdministrasiHRD().ShowDialog();
                         break;
                     }
                 default:

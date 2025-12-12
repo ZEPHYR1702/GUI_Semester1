@@ -37,11 +37,11 @@
             // comboBoxGroup
             // 
             comboBoxGroup.FormattingEnabled = true;
-            comboBoxGroup.Items.AddRange(new object[] { "Tambahan", "Week 13A" });
+            comboBoxGroup.Items.AddRange(new object[] { "Tambahan", "Week 13A", "Week 13B" });
             comboBoxGroup.Location = new Point(58, 79);
             comboBoxGroup.Margin = new Padding(4);
             comboBoxGroup.Name = "comboBoxGroup";
-            comboBoxGroup.Size = new Size(213, 33);
+            comboBoxGroup.Size = new Size(213, 27);
             comboBoxGroup.TabIndex = 0;
             comboBoxGroup.Text = "(Pilih week di sini)";
             comboBoxGroup.SelectedIndexChanged += comboBoxGroup_SelectedIndexChanged;
@@ -52,7 +52,7 @@
             comboBoxLatihan.Location = new Point(58, 120);
             comboBoxLatihan.Margin = new Padding(4);
             comboBoxLatihan.Name = "comboBoxLatihan";
-            comboBoxLatihan.Size = new Size(213, 33);
+            comboBoxLatihan.Size = new Size(213, 27);
             comboBoxLatihan.TabIndex = 1;
             comboBoxLatihan.Text = "(Pilih latihan di sini)";
             comboBoxLatihan.SelectedIndexChanged += comboBoxLatihan_SelectedIndexChanged;
@@ -73,13 +73,13 @@
             label1.AutoSize = true;
             label1.Location = new Point(46, 22);
             label1.Name = "label1";
-            label1.Size = new Size(242, 25);
+            label1.Size = new Size(196, 20);
             label1.TabIndex = 3;
             label1.Text = "All GUI Latihan (Semester 1)";
             // 
             // FormMaster
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(333, 230);
             Controls.Add(label1);
