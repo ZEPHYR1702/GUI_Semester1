@@ -29,6 +29,7 @@ namespace GUI_Semester1
             if (comboBoxGroup.SelectedItem!.ToString() == "Tambahan")
             {
                 comboBoxLatihan.Items.Add("Nilai UTS Mahasiswa");
+                comboBoxLatihan.Items.Add("Student Mark");
             }
             else if (comboBoxGroup.SelectedItem.ToString() == "Week 13A")
             {
@@ -84,6 +85,11 @@ namespace GUI_Semester1
                 case "Sistem Administrasi HRD":
                     {
                         new FormSistemAdministrasiHRD().ShowDialog();
+                        break;
+                    }
+                case "Student Mark":
+                    {
+                        new FormStudentMark().ShowDialog();
                         break;
                     }
                 default:
