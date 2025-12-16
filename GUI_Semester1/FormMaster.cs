@@ -1,6 +1,7 @@
 ﻿using GUI_Semester1.Tambahan;
 using GUI_Semester1.week13;
 using GUI_Semester1.week13B;
+using GUI_Semester1.week14A;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,8 +43,12 @@ namespace GUI_Semester1
                 comboBoxLatihan.Items.Add("Data Responden");
                 comboBoxLatihan.Items.Add("Sistem Administrasi HRD");
             }
+            else if (comboBoxGroup.SelectedItem.ToString() == "Week 14A")
+            {
+                comboBoxLatihan.Items.Add("Point Reward Pelanggan");
+            }
 
-            ValidateSelection();
+                ValidateSelection();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,6 +95,11 @@ namespace GUI_Semester1
                 case "Student Mark":
                     {
                         new FormStudentMark().ShowDialog();
+                        break;
+                    }
+                case "Point Reward Pelanggan":
+                    {
+                        new FormPointRewardPelanggan().ShowDialog();
                         break;
                     }
                 default:
