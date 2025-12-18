@@ -13,6 +13,8 @@ namespace GUI_Semester1.week14B
         public FormGajiPegawai()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
 
         //global variable
@@ -161,6 +163,24 @@ namespace GUI_Semester1.week14B
                 listBoxOutput.Items.Add("===================================");
                 listBoxOutput.Items.Add("");
             }
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            listBoxOutput.Items.Clear();
+            textBoxEmployeeID.Clear();
+            radioButtonGenderMale.Checked = false;
+            radioButtonGenderFemale.Checked = false;
+            comboBoxPosition.Text = "(Empty)";
+            checkBoxOutsource.Checked = false;
+            dateTimePickerStartWork.Value = DateTime.Now;
+            numericUpDownNumberOfChildren.Value = 0;
+            textBoxBasicSalary.Clear();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -238,6 +238,7 @@
             buttonClose.TabIndex = 3;
             buttonClose.Text = "CLOSE";
             buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
             // 
             // buttonDisplayAll
             // 
@@ -257,6 +258,7 @@
             buttonClear.TabIndex = 1;
             buttonClear.Text = "CLEAR";
             buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Click += buttonClear_Click;
             // 
             // listBoxOutput
             // 
