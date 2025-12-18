@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            textBoxEmployeeID = new TextBox();
-            radioButtonGenderMale = new RadioButton();
-            radioButtonGenderFemale = new RadioButton();
-            comboBoxPosition = new ComboBox();
-            checkBoxOutsource = new CheckBox();
-            dateTimePickerStartWork = new DateTimePicker();
-            numericUpDownNumberOfChildren = new NumericUpDown();
-            textBoxBasicSalary = new TextBox();
             buttonSaveData = new Button();
+            textBoxBasicSalary = new TextBox();
+            numericUpDownNumberOfChildren = new NumericUpDown();
+            dateTimePickerStartWork = new DateTimePicker();
+            checkBoxOutsource = new CheckBox();
+            comboBoxPosition = new ComboBox();
+            radioButtonGenderFemale = new RadioButton();
+            radioButtonGenderMale = new RadioButton();
+            textBoxEmployeeID = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             groupBox2 = new GroupBox();
-            listBoxOutput = new ListBox();
-            buttonClear = new Button();
-            buttonDisplayAll = new Button();
             buttonClose = new Button();
+            buttonDisplayAll = new Button();
+            buttonClear = new Button();
+            listBoxOutput = new ListBox();
             label7 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownNumberOfChildren).BeginInit();
@@ -81,77 +81,58 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Employee Data";
             // 
-            // label1
+            // buttonSaveData
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 43);
-            label1.Name = "label1";
-            label1.Size = new Size(105, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Employee ID:";
+            buttonSaveData.Location = new Point(166, 324);
+            buttonSaveData.Name = "buttonSaveData";
+            buttonSaveData.Size = new Size(156, 29);
+            buttonSaveData.TabIndex = 14;
+            buttonSaveData.Text = "SAVE DATA";
+            buttonSaveData.UseVisualStyleBackColor = true;
+            buttonSaveData.Click += buttonSaveData_Click;
             // 
-            // label2
+            // textBoxBasicSalary
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 75);
-            label2.Name = "label2";
-            label2.Size = new Size(68, 21);
-            label2.TabIndex = 1;
-            label2.Text = "Gender:";
+            textBoxBasicSalary.Location = new Point(166, 259);
+            textBoxBasicSalary.Name = "textBoxBasicSalary";
+            textBoxBasicSalary.Size = new Size(156, 28);
+            textBoxBasicSalary.TabIndex = 13;
             // 
-            // label3
+            // numericUpDownNumberOfChildren
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(6, 111);
-            label3.Name = "label3";
-            label3.Size = new Size(72, 21);
-            label3.TabIndex = 2;
-            label3.Text = "Position:";
+            numericUpDownNumberOfChildren.Location = new Point(166, 218);
+            numericUpDownNumberOfChildren.Name = "numericUpDownNumberOfChildren";
+            numericUpDownNumberOfChildren.Size = new Size(156, 28);
+            numericUpDownNumberOfChildren.TabIndex = 12;
             // 
-            // label4
+            // dateTimePickerStartWork
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(6, 177);
-            label4.Name = "label4";
-            label4.Size = new Size(90, 21);
-            label4.TabIndex = 3;
-            label4.Text = "Start Work:";
+            dateTimePickerStartWork.Format = DateTimePickerFormat.Short;
+            dateTimePickerStartWork.Location = new Point(166, 177);
+            dateTimePickerStartWork.Name = "dateTimePickerStartWork";
+            dateTimePickerStartWork.Size = new Size(156, 28);
+            dateTimePickerStartWork.TabIndex = 11;
+            dateTimePickerStartWork.Value = new DateTime(2025, 12, 18, 0, 0, 0, 0);
             // 
-            // label5
+            // checkBoxOutsource
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(6, 225);
-            label5.Name = "label5";
-            label5.Size = new Size(154, 21);
-            label5.TabIndex = 4;
-            label5.Text = "Number of Children:";
+            checkBoxOutsource.AutoSize = true;
+            checkBoxOutsource.Location = new Point(166, 146);
+            checkBoxOutsource.Name = "checkBoxOutsource";
+            checkBoxOutsource.Size = new Size(106, 25);
+            checkBoxOutsource.TabIndex = 10;
+            checkBoxOutsource.Text = "Outsource";
+            checkBoxOutsource.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // comboBoxPosition
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(-1, 259);
-            label6.Name = "label6";
-            label6.Size = new Size(97, 21);
-            label6.TabIndex = 5;
-            label6.Text = "Basic Salary:";
-            // 
-            // textBoxEmployeeID
-            // 
-            textBoxEmployeeID.Location = new Point(166, 40);
-            textBoxEmployeeID.Name = "textBoxEmployeeID";
-            textBoxEmployeeID.Size = new Size(156, 28);
-            textBoxEmployeeID.TabIndex = 6;
-            // 
-            // radioButtonGenderMale
-            // 
-            radioButtonGenderMale.AutoSize = true;
-            radioButtonGenderMale.Location = new Point(166, 77);
-            radioButtonGenderMale.Name = "radioButtonGenderMale";
-            radioButtonGenderMale.Size = new Size(67, 25);
-            radioButtonGenderMale.TabIndex = 7;
-            radioButtonGenderMale.TabStop = true;
-            radioButtonGenderMale.Text = "Male";
-            radioButtonGenderMale.UseVisualStyleBackColor = true;
+            comboBoxPosition.FormattingEnabled = true;
+            comboBoxPosition.Items.AddRange(new object[] { "Staff", "Supervisor", "Manager" });
+            comboBoxPosition.Location = new Point(166, 111);
+            comboBoxPosition.Name = "comboBoxPosition";
+            comboBoxPosition.Size = new Size(156, 29);
+            comboBoxPosition.TabIndex = 9;
+            comboBoxPosition.Text = "(Empty)";
             // 
             // radioButtonGenderFemale
             // 
@@ -164,53 +145,77 @@
             radioButtonGenderFemale.Text = "Female";
             radioButtonGenderFemale.UseVisualStyleBackColor = true;
             // 
-            // comboBoxPosition
+            // radioButtonGenderMale
             // 
-            comboBoxPosition.FormattingEnabled = true;
-            comboBoxPosition.Location = new Point(166, 111);
-            comboBoxPosition.Name = "comboBoxPosition";
-            comboBoxPosition.Size = new Size(151, 29);
-            comboBoxPosition.TabIndex = 9;
+            radioButtonGenderMale.AutoSize = true;
+            radioButtonGenderMale.Location = new Point(166, 77);
+            radioButtonGenderMale.Name = "radioButtonGenderMale";
+            radioButtonGenderMale.Size = new Size(67, 25);
+            radioButtonGenderMale.TabIndex = 7;
+            radioButtonGenderMale.TabStop = true;
+            radioButtonGenderMale.Text = "Male";
+            radioButtonGenderMale.UseVisualStyleBackColor = true;
             // 
-            // checkBoxOutsource
+            // textBoxEmployeeID
             // 
-            checkBoxOutsource.AutoSize = true;
-            checkBoxOutsource.Location = new Point(166, 146);
-            checkBoxOutsource.Name = "checkBoxOutsource";
-            checkBoxOutsource.Size = new Size(106, 25);
-            checkBoxOutsource.TabIndex = 10;
-            checkBoxOutsource.Text = "Outsource";
-            checkBoxOutsource.UseVisualStyleBackColor = true;
+            textBoxEmployeeID.Location = new Point(166, 40);
+            textBoxEmployeeID.Name = "textBoxEmployeeID";
+            textBoxEmployeeID.Size = new Size(156, 28);
+            textBoxEmployeeID.TabIndex = 6;
             // 
-            // dateTimePickerStartWork
+            // label6
             // 
-            dateTimePickerStartWork.Location = new Point(166, 177);
-            dateTimePickerStartWork.Name = "dateTimePickerStartWork";
-            dateTimePickerStartWork.Size = new Size(150, 28);
-            dateTimePickerStartWork.TabIndex = 11;
+            label6.AutoSize = true;
+            label6.Location = new Point(6, 262);
+            label6.Name = "label6";
+            label6.Size = new Size(97, 21);
+            label6.TabIndex = 5;
+            label6.Text = "Basic Salary:";
             // 
-            // numericUpDownNumberOfChildren
+            // label5
             // 
-            numericUpDownNumberOfChildren.Location = new Point(166, 218);
-            numericUpDownNumberOfChildren.Name = "numericUpDownNumberOfChildren";
-            numericUpDownNumberOfChildren.Size = new Size(150, 28);
-            numericUpDownNumberOfChildren.TabIndex = 12;
+            label5.AutoSize = true;
+            label5.Location = new Point(6, 225);
+            label5.Name = "label5";
+            label5.Size = new Size(154, 21);
+            label5.TabIndex = 4;
+            label5.Text = "Number of Children:";
             // 
-            // textBoxBasicSalary
+            // label4
             // 
-            textBoxBasicSalary.Location = new Point(166, 259);
-            textBoxBasicSalary.Name = "textBoxBasicSalary";
-            textBoxBasicSalary.Size = new Size(150, 28);
-            textBoxBasicSalary.TabIndex = 13;
+            label4.AutoSize = true;
+            label4.Location = new Point(6, 177);
+            label4.Name = "label4";
+            label4.Size = new Size(90, 21);
+            label4.TabIndex = 3;
+            label4.Text = "Start Work:";
             // 
-            // buttonSaveData
+            // label3
             // 
-            buttonSaveData.Location = new Point(166, 324);
-            buttonSaveData.Name = "buttonSaveData";
-            buttonSaveData.Size = new Size(94, 29);
-            buttonSaveData.TabIndex = 14;
-            buttonSaveData.Text = "SAVE DATA";
-            buttonSaveData.UseVisualStyleBackColor = true;
+            label3.AutoSize = true;
+            label3.Location = new Point(6, 111);
+            label3.Name = "label3";
+            label3.Size = new Size(72, 21);
+            label3.TabIndex = 2;
+            label3.Text = "Position:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(6, 75);
+            label2.Name = "label2";
+            label2.Size = new Size(68, 21);
+            label2.TabIndex = 1;
+            label2.Text = "Gender:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 43);
+            label1.Name = "label1";
+            label1.Size = new Size(105, 21);
+            label1.TabIndex = 0;
+            label1.Text = "Employee ID:";
             // 
             // groupBox2
             // 
@@ -220,10 +225,38 @@
             groupBox2.Controls.Add(listBoxOutput);
             groupBox2.Location = new Point(368, 50);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(437, 398);
+            groupBox2.Size = new Size(446, 398);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Salary Report";
+            // 
+            // buttonClose
+            // 
+            buttonClose.Location = new Point(336, 324);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(101, 29);
+            buttonClose.TabIndex = 3;
+            buttonClose.Text = "CLOSE";
+            buttonClose.UseVisualStyleBackColor = true;
+            // 
+            // buttonDisplayAll
+            // 
+            buttonDisplayAll.Location = new Point(114, 324);
+            buttonDisplayAll.Name = "buttonDisplayAll";
+            buttonDisplayAll.Size = new Size(216, 29);
+            buttonDisplayAll.TabIndex = 2;
+            buttonDisplayAll.Text = "DISPLAY ALL";
+            buttonDisplayAll.UseVisualStyleBackColor = true;
+            buttonDisplayAll.Click += buttonDisplayAll_Click;
+            // 
+            // buttonClear
+            // 
+            buttonClear.Location = new Point(7, 324);
+            buttonClear.Name = "buttonClear";
+            buttonClear.Size = new Size(101, 29);
+            buttonClear.TabIndex = 1;
+            buttonClear.Text = "CLEAR";
+            buttonClear.UseVisualStyleBackColor = true;
             // 
             // listBoxOutput
             // 
@@ -232,33 +265,6 @@
             listBoxOutput.Name = "listBoxOutput";
             listBoxOutput.Size = new Size(425, 277);
             listBoxOutput.TabIndex = 0;
-            // 
-            // buttonClear
-            // 
-            buttonClear.Location = new Point(0, 324);
-            buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(94, 29);
-            buttonClear.TabIndex = 1;
-            buttonClear.Text = "CLEAR";
-            buttonClear.UseVisualStyleBackColor = true;
-            // 
-            // buttonDisplayAll
-            // 
-            buttonDisplayAll.Location = new Point(176, 324);
-            buttonDisplayAll.Name = "buttonDisplayAll";
-            buttonDisplayAll.Size = new Size(94, 29);
-            buttonDisplayAll.TabIndex = 2;
-            buttonDisplayAll.Text = "DISPLAY ALL";
-            buttonDisplayAll.UseVisualStyleBackColor = true;
-            // 
-            // buttonClose
-            // 
-            buttonClose.Location = new Point(337, 324);
-            buttonClose.Name = "buttonClose";
-            buttonClose.Size = new Size(94, 29);
-            buttonClose.TabIndex = 3;
-            buttonClose.Text = "CLOSE";
-            buttonClose.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -274,7 +280,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(816, 472);
+            ClientSize = new Size(826, 472);
             Controls.Add(label7);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);

@@ -101,7 +101,6 @@
             label3.Size = new Size(53, 21);
             label3.TabIndex = 2;
             label3.Text = "Stock:";
-            label3.Click += this.label3_Click;
             // 
             // label4
             // 
@@ -111,7 +110,6 @@
             label4.Size = new Size(117, 21);
             label4.TabIndex = 3;
             label4.Text = "Purchase Date:";
-            label4.Click += this.label4_Click;
             // 
             // label5
             // 
@@ -142,7 +140,6 @@
             numericUpDownInputStock.Name = "numericUpDownInputStock";
             numericUpDownInputStock.Size = new Size(150, 28);
             numericUpDownInputStock.TabIndex = 7;
-            numericUpDownInputStock.ValueChanged += this.numericUpDownInputStock_ValueChanged;
             // 
             // dateTimeInputPickerPurchaseDate
             // 
@@ -150,7 +147,6 @@
             dateTimeInputPickerPurchaseDate.Name = "dateTimeInputPickerPurchaseDate";
             dateTimeInputPickerPurchaseDate.Size = new Size(155, 28);
             dateTimeInputPickerPurchaseDate.TabIndex = 8;
-            dateTimeInputPickerPurchaseDate.ValueChanged += this.dateTimeInputPickerPurchaseDate_ValueChanged;
             // 
             // buttonBrowse
             // 
