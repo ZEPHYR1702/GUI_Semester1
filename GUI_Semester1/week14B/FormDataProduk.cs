@@ -57,11 +57,11 @@ namespace GUI_Semester1.week14B
             TimeSpan difference = DateTime.Now - purchaseDate;
             if (difference.TotalDays < 7)
             {
-                isNewProduct = false;
+                isNewProduct = true;
             }
             else
             {
-                isNewProduct = true;
+                isNewProduct = false;
             }
             return isNewProduct;
         }
