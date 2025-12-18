@@ -2,6 +2,7 @@
 using GUI_Semester1.week13;
 using GUI_Semester1.week13B;
 using GUI_Semester1.week14A;
+using GUI_Semester1.week14B;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,6 +47,11 @@ namespace GUI_Semester1
             else if (comboBoxGroup.SelectedItem.ToString() == "Week 14A")
             {
                 comboBoxLatihan.Items.Add("Point Reward Pelanggan");
+            }
+            else if (comboBoxGroup.SelectedItem.ToString() == "Week 14B")
+            {
+                comboBoxLatihan.Items.Add("Data Produk");
+                comboBoxLatihan.Items.Add("Gaji Pegawai");
             }
 
                 ValidateSelection();
@@ -100,6 +106,16 @@ namespace GUI_Semester1
                 case "Point Reward Pelanggan":
                     {
                         new FormPointRewardPelanggan().ShowDialog();
+                        break;
+                    }
+                case "Data Produk":
+                    {
+                        new FormDataProduk().ShowDialog();
+                        break;
+                    }
+                case "Gaji Pegawai":
+                    {
+                        new FormGajiPegawai().ShowDialog();
                         break;
                     }
                 default:

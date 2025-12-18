@@ -37,7 +37,7 @@
             // comboBoxGroup
             // 
             comboBoxGroup.FormattingEnabled = true;
-            comboBoxGroup.Items.AddRange(new object[] { "Tambahan", "Week 13A", "Week 13B", "Week 14A" });
+            comboBoxGroup.Items.AddRange(new object[] { "Tambahan", "Week 13A", "Week 13B", "Week 14A", "Week 14B" });
             comboBoxGroup.Location = new Point(58, 79);
             comboBoxGroup.Margin = new Padding(4);
             comboBoxGroup.Name = "comboBoxGroup";
